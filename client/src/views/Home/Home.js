@@ -6,7 +6,7 @@ import Typewriter from 'typewriter-effect';
 import Button from 'react-bootstrap/Button';
 import Footer from "./../../components/Footer/Footer.js";
 import { useMediaPredicate } from "react-media-hook";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 //import 'semantic-ui-css/semantic.min.css'
 const Home = () => {
     const[a, seta] = useState(null);
