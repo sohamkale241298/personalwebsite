@@ -13,6 +13,10 @@
     align-items: center;
 }
 
+.imageMaxHeight{
+    max-height: 50vh;
+}
+
 @media (max-width: 768px) {
     .boxCenter{
         padding-top: 5vh;
@@ -27,6 +31,10 @@
 
     .textClass{
         font-size: 3vw;;
+    }
+
+    .imageMaxHeight{
+        max-height: 40vh;
     }
 }
 
@@ -45,3 +53,4 @@
         font-size: 3vw;
     }
 }
+

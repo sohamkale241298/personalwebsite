@@ -9,7 +9,7 @@ const PCard = (props) => {
     return(
     <Container className="containerDivison">
         <div className="boxCenter text-white">
-            <img src={props.image} class="img-fluid"/>
+            <img src={props.image} class="img-fluid imageMaxHeight"/>
             <br/><br/>
             <h4 className="card-title">{props.title}</h4>
             

@@ -10,6 +10,10 @@ import gif2 from "./gif2.gif";
 import portfolioApp from "./../Projects/portfoliowebapp.png";
 import PCard from "./../Contact Me/PCard.js";
 import Card from "./../../components/Card/Card.js";
+import gatorRaider from "./gatorRaider.png";
+import VRExp from "./VRExp.png";
+import transferAuditor from "./TransferAuditor.png";
+import Robocode from "./Robocode.png";
 import Footer from "./../../components/Footer/Footer.js";
 const Projects = (props) => {
     return (
@@ -54,14 +58,33 @@ const Projects = (props) => {
                  {/* <Button  onClick={event =>  window.location.href='/home'}>View this website</Button> */}
             </Row>
 
+            <Row fluid className="project5">
+            <PCard
+                image={transferAuditor}
+                title="Transfer-Auditor"
+                desc="Collaborating with three friends in building a web app which would help transfer students track their current university courses and see how they can be transferred to other universities depending on their choice of majors. 
+                The app also shows the courses required and accepted by the transfer university thus helping the students take only the right courses. 
+                We are working with .Net MVC for the frontend and have used SQL as the database. The website is deployed using azure. This project is currently in progress."/>
+            </Row>
+
             <Row fluid className="bg-dark">
             <PCard
-                image={image}
-                title="Gator Raider"
+                image={Robocode}
+                title="Robocode"
                 desc="Led a group of 4 students, monitored and tracked their progress as part of one of my classes to implement an algorithm in Java which controlled the movement of a software robot team which competed against the other teams. 
                 Created 4 virtual robots each with unique strategies and defense techniques. The robots could change their tactics depending on the opponent robot's position and attacking mechanism.
                 We used external libraries, and also worked with already existing code to modify/add code to improve the performance of the robots."/>
             </Row>
+
+            <Row fluid className="project6">
+            <PCard
+                image={VRExp}
+                title="VR-Life On Land"
+                desc="Created a VR experience in Unity using C# that emphasizes how deforestation, constructing buildings and other human actions affect the lives of animals living there, and also affect our future. 
+                Used various assets from Unity asset store and wrote complicated scripts in C# in order to build this project.
+                Made use of Agile methodology to complete the project. "/>
+            </Row>
+            
             
             </Container>
            
