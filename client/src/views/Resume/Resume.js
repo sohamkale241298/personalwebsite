@@ -5,13 +5,23 @@ import { useMediaPredicate } from "react-media-hook";
 import {Button, Container, Row, Col, ResponsiveEmbed} from 'react-bootstrap';
 import Footer from "./../../components/Footer/Footer.js";
 import ResumePic from "./Resume.png";
+import fire, {storage} from "../../config/Fire";
 const Resume = () => {
     const [cardWidth, setCardWidth] = useState('50vw');
     const isMobile = useMediaPredicate("(max-width: 680px)");
-    // useEffect({
-    //     let a = useMediaPredicate("(max-width: 680px)");
-    //     setIsMobile(a);
-    // }, [])
+    var storageRef = storage.ref();
+    const [url, setUrl] = useState(null);
+    var resumeRef = storageRef.child('Resume/space.jpg');
+    useEffect (() => {
+        storage.ref(`Soham/`).child(`Resume.png`).getDownloadURL().then(url => {
+            setUrl(url);
+        })
+    }, [])
+
+    const onCLickDownload = () => {
+       window.open("https://drive.google.com/open?id=1YMKcigpE7YAazJ5jXS_gR7stY5X29jQ3");
+    }
+
     return(
         // <div className="backImage">
         //     <div className="center">
@@ -25,9 +35,12 @@ const Resume = () => {
         // </div>
         // <div className=" bg-dark customDiv">
         <div>
+            <div className="bg-dark buttonAlign">
+                 <Button onClick={onCLickDownload}>Download</Button>
+            </div>
             <Container fluid className="bg-dark centeredDivParent">
                 <div className="squareShape">
-                    <img src={ResumePic} class="img-fluid" alt="Responsive image"/>  
+                    <img src={url} class="img-fluid mt-3 mb-3" alt="Responsive image"/>  
                 </div>
             </Container>
             <Container fluid className="bg-white text-center">
