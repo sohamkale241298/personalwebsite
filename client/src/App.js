@@ -22,6 +22,7 @@
 // export default App;
 import React from 'react';
 import ReactGA from 'react-ga';
+import {useEffect} from 'react';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import './App.css';
 import Home from "./views/Home/Home.js";
@@ -32,22 +33,15 @@ import ContactMe from "./views/Contact Me/ContactMe.js";
 import Navbar from "./components/navbar/navbarnew.js";
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
-  function initializeReactGA() {
-    ReactGA.initialize('UA-159311918-1');
-    ReactGA.pageview('/homepage');
-}
+
+useEffect(() => {
+  ReactGA.initialize('UA-159311918-1');
+  ReactGA.pageview('/homepage');
+})
+
   return (
     <div>
       <head>
-
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159311918-1"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments)}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-159311918-1');
-      </script>
 
 
         <link href="https://fonts.googleapis.com/css2?family=Sofia&family=Spartan:wght@400;700&display=swap" rel="stylesheet"></link>
