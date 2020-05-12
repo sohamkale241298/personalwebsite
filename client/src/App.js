@@ -32,11 +32,16 @@ import Projects from "./views/Projects/Projects.js";
 import ContactMe from "./views/Contact Me/ContactMe.js";
 import Navbar from "./components/navbar/navbarnew.js";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { createBrowserHistory } from 'history';
 function App() {
 
 useEffect(() => {
   ReactGA.initialize('UA-159311918-1');
   ReactGA.pageview('/homepage');
+  ReactGA.pageview('/home');
+  ReactGA.pageview('/Resume');
+  ReactGA.pageview('/about');
+  ReactGA.pageview('/projects');
 })
 
   return (
