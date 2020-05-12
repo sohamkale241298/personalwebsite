@@ -21,7 +21,7 @@
 
 // export default App;
 import React from 'react';
-// import logo from './logo.svg';
+import ReactGA from 'react-ga';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import './App.css';
 import Home from "./views/Home/Home.js";
@@ -32,6 +32,10 @@ import ContactMe from "./views/Contact Me/ContactMe.js";
 import Navbar from "./components/navbar/navbarnew.js";
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
+  function initializeReactGA() {
+    ReactGA.initialize('UA-159311918-1');
+    ReactGA.pageview('/homepage');
+}
   return (
     <div>
       <head>
