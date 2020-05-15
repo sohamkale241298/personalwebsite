@@ -39,19 +39,8 @@ const Projects = (props) => {
                 </Container>
                 
             </Row>
-            
-            <Row fluid className="bg-info">
-                <PCard
-                // image={mixmasalaimage}
-                image={mixmasalaimage2}
-                title="Miks masala Website"
-                desc="A website for Miks masala, a family-owned food delivery service in Orlando, FL. 
-                Used HTML, CSS, JS as the front-end for dynamically creating HTML elements and updating pages.
-                Made use of PHP and firebase as the backend to keep track of customers and their orders. 
-                Used PHP to send emails with customer orders to the owner and allowed him to either accept/deny the orders."/>
-            </Row>
 
-            <Row fluid className="coloe">
+            <Row fluid className="bg-info">
             <PCard
                 image={portfolioApp}
                 title="Portfolio webapp"
@@ -75,6 +64,17 @@ const Projects = (props) => {
                 <Container fluid className="text-center mt-n4 mb-4">
                 <Button onClick={event => window.open("https://mytransferauditor.azurewebsites.net/")}>View this website</Button>
                 </Container>
+            </Row>
+
+            <Row fluid className="coloe">
+                <PCard
+                // image={mixmasalaimage}
+                image={mixmasalaimage2}
+                title="Miks masala Website"
+                desc="A website for Miks masala, a family-owned food delivery service in Orlando, FL. 
+                Used HTML, CSS, JS as the front-end for dynamically creating HTML elements and updating pages.
+                Made use of PHP and firebase as the backend to keep track of customers and their orders. 
+                Used PHP to send emails with customer orders to the owner and allowed him to either accept/deny the orders."/>
             </Row>
 
             <Row fluid className="bg-dark">
