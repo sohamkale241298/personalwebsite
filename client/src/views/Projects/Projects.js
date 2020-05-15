@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {Container, Row, Col} from 'react-bootstrap';
+import {Container, Row, Button, Col} from 'react-bootstrap';
 import "./Projects.css";
 import image from "./image.png";
 import image2 from "./home.png";
@@ -27,13 +27,17 @@ const Projects = (props) => {
             </div>
             <Container fluid>
 
-            <Row fluid className="bg-danger">
+            <Row fluid className="bg-danger text-center">
                 <PCard
                 image={image2}
                 title="Attractions Salon"
                 desc="A web app for the Attractions Salon in Gainesville, FL.
                 It aims for users to be able to find the salon, make an account, see the services offered, make payments, and make appointments in an easy to use fashion.
                 I handled the backend of the web app using firebase database and fire storage and also implemented the Admin Dashboard which allows the admin to make changes to the website like add/delete services, change images and handle appointments made by customers."/>
+                <Container fluid className="text-center mt-n4 mb-4">
+                <Button onClick={event => window.open("https://attractionssalon.herokuapp.com")}>View this website</Button>
+                </Container>
+                
             </Row>
             
             <Row fluid className="bg-info">
@@ -56,15 +60,21 @@ const Projects = (props) => {
                 The users also get an opportunity to choose between a single page or a multi-page portfolio website.
                 Used reactjs for the frontend and firebase for the backend to authenticate users and to store all of their information which is then reflected on the website."/>
                  {/* <Button  onClick={event =>  window.location.href='/home'}>View this website</Button> */}
+                 <Container fluid className="text-center mt-n4 mb-4">
+                <Button onClick={event => window.open("https://portfolioappproject.herokuapp.com")}>View this website</Button>
+                </Container>
             </Row>
 
             <Row fluid className="project5">
             <PCard
                 image={transferAuditor}
                 title="Transfer-Auditor"
-                desc="Collaborating with three friends in building a web app which would help transfer students track their current university courses and see how they can be transferred to other universities depending on their choice of majors. 
+                desc="Currently Collaborating with three friends in building a web app which would help transfer students track their current university courses and see how they can be transferred to other universities depending on their choice of majors. 
                 The app also shows the courses required and accepted by the transfer university thus helping the students take only the right courses. 
                 We are working with .Net MVC for the frontend and have used SQL as the database. The website is deployed using azure. This project is currently in progress."/>
+                <Container fluid className="text-center mt-n4 mb-4">
+                <Button onClick={event => window.open("https://mytransferauditor.azurewebsites.net/")}>View this website</Button>
+                </Container>
             </Row>
 
             <Row fluid className="bg-dark">
