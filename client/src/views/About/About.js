@@ -14,7 +14,7 @@ import { Icon } from 'semantic-ui-react';
 import { useMediaPredicate } from "react-media-hook";
 const About = (props) => {
     let react = 75, CSS = 65, HTML = 75, C = 80, Java = 80, JS = 75, Node = 60, Git = 75, Firebase = 70, AS = 40;
-    let CSharp = 60, Unity = 60, PHP = 40, Net = 50, MongoDB = 50; 
+    let CSharp = 60, Unity = 60, PHP = 40, Net = 50, MongoDB = 50, uipath = 60, alteryx = 45, javaEE = 45;
     const [labelCol, setLabelCol] = useState(2);
     const [progressBarCol, setProgressBarCol] = useState(10);
     const isMobile = useMediaPredicate("(max-width: 768px)");
@@ -51,9 +51,9 @@ const About = (props) => {
                 <Card style={{width: "100%"}} bg={'dark'} text={'white'}>
                 <br/>
                 <h4 className="headStyle">About Me</h4>
-                <Card.Body className="pStyle">I am Soham Kale. I am currently a Senior at University of Florida, Gainesville, FL, majoring in Computer Science. I plan on graduating in Fall 2020.
+                <Card.Body className="pStyle">I am Soham Kale. I am currently a Senior at University of Florida, Gainesville, FL, majoring in Computer Science. I plan on graduating in Spring 2021.
                    I also graduated with an Associates in Arts degree in Computer Science and an honors certificate from Valencia college, Orlando, FL. 
-                   I am looking for a full-time job opportunity starting from Spring 2021. 
+                   I am looking for a full-time job opportunity starting from May 2021. 
                    As part of my degree, I have taken several programming classes that have made me proficient in various programming languages like Java, C, and C++. 
                    I have developed strong problem-solving skills through these classes and various projects. 
                    I am very enthusiastic to learn new skills on my own.
@@ -78,6 +78,24 @@ const About = (props) => {
                     <li>Computer Science</li>
                     <li>GPA: 4.0</li>
                 </ul>
+            </div>
+            <div className="expContainer expContainerRightAligned bg-dark eduFont border-bottom">
+                <h4 className="text-center">Experience</h4>
+                <div className="">
+                    <ul><b><u>Data Science Intern, Florida Department of Management Services</u></b><span className="text-right fa-pull-right">September 2020 to December 2020</span>
+                        <li>Used SQL queries to query data and Alteryx to manipulate, cleanse and export that data.</li>
+                        <li>Automated various workflows like navigating to a website, extracting data by simulating button clicks, transforming that data into a CSV, an excel file, or a powerBI dashboard and also sending out automatic emails using RPA tools like UiPath and Alteryx.</li>
+                        <li>Made use of OCR engines within UiPath to extract data from pdfs and manipulated it using regex to get the required fields</li>
+                        <li>Used python libraries like selenium for web scraping.</li>
+                        <li>Built a barebone structure as the foundation of a JAVA EE 8 web-app deployed to a wildfly server. Used JSF pages as the frontend and PostgreSQL database as the backend with the integration of other API’s like JPA, EJB along with a few others.</li>
+                    </ul>
+                    <ul><b><u>Software Developer Intern, Byppo Technologies (June 2020 – Sept 2020)</u></b><span className="text-right fa-pull-right">June 2020 to September 2020</span>
+                        <li>Assisted in the development of Byppo’s new and responsive web-app which allowed customers to order food online.</li>
+                        <li>Used hammer.js to add gestures to the web-app</li>
+                        <li>Used DynamoDB to perform backend duties like creating or modifying database schema to be used with GraphQL queries</li>
+                        <li>Worked with AWS lambdas for serverless web app.</li>
+                    </ul>
+                </div>
             </div>
             <div className="softSkillsContainer bg-dark eduFont border-bottom">
                 
@@ -185,6 +203,21 @@ const About = (props) => {
             <Row>
                 <Col xs={labelCol} className="labelHeight">Git</Col>
                 <Col xs={progressBarCol}><ProgressBar variant="success" label={`${Git}%`} now={Git} /></Col>
+            </Row>
+            <div className="smallDivision"></div>
+            <Row>
+                <Col xs={labelCol} className="labelHeight">javaEE</Col>
+                <Col xs={progressBarCol}><ProgressBar variant="success" label={`${javaEE}%`} now={javaEE} /></Col>
+            </Row>
+            <div className="smallDivision"></div>
+            <Row>
+                <Col xs={labelCol} className="labelHeight">Alteryx</Col>
+                <Col xs={progressBarCol}><ProgressBar variant="success" label={`${alteryx}%`} now={alteryx} /></Col>
+            </Row>
+            <div className="smallDivision"></div>
+            <Row>
+                <Col xs={labelCol} className="labelHeight">UiPath</Col>
+                <Col xs={progressBarCol}><ProgressBar variant="success" label={`${uipath}%`} now={uipath} /></Col>
             </Row>
             {/* <div className="smallDivision"></div>
             <Row>

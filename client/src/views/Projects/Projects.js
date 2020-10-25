@@ -14,7 +14,9 @@ import gatorRaider from "./gatorRaider.png";
 import VRExp from "./VRExp.png";
 import transferAuditor from "./TransferAuditor.png";
 import Robocode from "./Robocode.png";
+import puzzle from "./15Puzzle.png"
 import Footer from "./../../components/Footer/Footer.js";
+import emoteit from "./emoteIt.png";
 const Projects = (props) => {
     return (
         <div className="bg-dark fullWebpage">
@@ -36,6 +38,19 @@ const Projects = (props) => {
                 I handled the backend of the web app using firebase database and fire storage and also implemented the Admin Dashboard which allows the admin to make changes to the website like add/delete services, change images and handle appointments made by customers."/>
                 <Container fluid className="text-center mt-n4 mb-4">
                 <Button onClick={event => window.open("https://attractionssalon.herokuapp.com")}>View this website</Button>
+                </Container>
+                
+            </Row>
+
+            <Row fluid className="text-center">
+                <PCard
+                image={emoteit}
+                title="Emote-it"
+                desc="A social media web-app/guessing game which updates real-time and where people can communicate with each other only with emojis. 
+                People can post whatever they want using emojis and other users will take turns guessing what the emoji means and try to answer it. Users get points for guessing the right answer and if someone else likes their answers. 
+                The person who posts the emojis also gets extra points if people cannot answer his post correctly. We also plan to introduce a chat option where people can chat with mostly emojis and a few words"/>
+                <Container fluid className="text-center mt-n4 mb-4">
+                <Button onClick={event => window.open("http://www.emoteit.me/")}>View this website</Button>
                 </Container>
                 
             </Row>
@@ -93,6 +108,19 @@ const Projects = (props) => {
                 desc="Created a VR experience in Unity using C# that emphasizes how deforestation, constructing buildings and other human actions affect the lives of animals living there, and also affect our future. 
                 Used various assets from Unity asset store and wrote complicated scripts in C# in order to build this project.
                 Made use of Agile methodology to complete the project. "/>
+            </Row>
+
+            <Row fluid className="bg-danger">
+            <PCard
+                image={puzzle}
+                title="15 Puzzle Game"
+                desc="Created an immersive 15 puzzle game in Unity using C#. The game starts with a shuffled bunch of number blocks and the aim is to rearrange them to align them according to a particular order 
+                that can be selected from the menu. Try to solve it in the shortest amount of time. Various difficulty levels ensure that the game can be played by kids and adults alike.
+                Used assets from Unity asset store and wrote complicated scripts and algorithms in C# in order to build this project.
+                Made use of Agile methodology to complete the project."/>
+                <Container fluid className="text-center mt-n4 mb-4">
+                <Button onClick={event => window.open("https://sohamkale.github.io/15Puzzle/")}>View this web game</Button>
+                </Container>
             </Row>
             
             
