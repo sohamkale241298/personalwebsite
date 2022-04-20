@@ -6,8 +6,10 @@
 
 .wrapper{
     /* background-color: yellow; */
-    width: 100vw;
+    width: 100vw - 50px;
     height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
     /* margin: 5px auto; */
     display: grid;
     grid-template-rows: minmax(50px, auto) minmax(100px, auto) repeat(1, minmax(100px, auto))  80px ;
@@ -31,10 +33,12 @@
     background: black;
     text-align: center;
     color: white;
-    width: 100vw;
+    width: 100vw - 50px;
     height: 100vh;
     grid-column: 1 / -1;
     display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
     /* background-image: url(); */
 }
 
@@ -78,10 +82,14 @@
 @media (max-width: 768px) {
     .wrapper{
         grid-template-rows: minmax(50px, auto) minmax(100px, auto) repeat(2, minmax(100px, auto));
+        overflow-x: hidden;
+        overflow-y: hidden;
     }
     .imageDiv{
-        width: 100vw;
+        width: 100vw - 50px;
         height: 100vh;
+        overflow-x: hidden;
+        overflow-y: hidden;
     }
     .imageText{
         left: 15vw;

@@ -3,6 +3,7 @@ import {Container, Row, Button, Col} from 'react-bootstrap';
 import "./Projects.css";
 import image from "./image.png";
 import image2 from "./home.png";
+import byppoPic from "./byppoPic.png";
 import mixmasalaimage from "./mixmasalaImage.png";
 import mixmasalaimage2 from "./mixmasalaimage2.png";
 import gif1 from "./gif1.gif";
@@ -28,6 +29,18 @@ const Projects = (props) => {
                 </div>
             </div>
             <Container fluid>
+            <Row fluid className="text-center">
+                <PCard
+                image={byppoPic}
+                title="Byppo Technologies Webapp"
+                desc="A web app for Byppo Technologies LLC in Gainesville, FL.
+                BYPPO aspires to be the all-inclusive platform for discovering new local eats. They partner with the best local restaurants in town to provide our users with a seamless food ordering experience.
+                I handled the development of this webapp using Angular 8."/>
+                <Container fluid className="text-center mt-n4 mb-4">
+                <Button onClick={event => window.open("https://app.byppo.com")}>View this website</Button>
+                </Container>
+                
+            </Row>
 
             <Row fluid className="bg-danger text-center">
                 <PCard

@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     
     <MDBFooter color="blue" className="font-small pt-4 mt-4">
-      <MDBContainer fluid className="text-center text-md-left">
+      <MDBContainer fluid className="text-center">
         <MDBRow>
           <MDBCol md="6">
             <h5 className="title">Soham Kale</h5>

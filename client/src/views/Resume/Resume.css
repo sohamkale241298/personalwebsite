@@ -30,6 +30,9 @@
 .squareShape{
     /* background-color: lightgreen; */
     width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .buttonAlign{
     display: flex;
