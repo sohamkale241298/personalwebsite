@@ -262,6 +262,7 @@ const About = (props) => {
           </ul>
         </div>
         
+        
         {/* vision, professional approach, hobbies */}
         <div className="skillsContainer bg-dark">
           <h4 className="headStyle">Relevant skills</h4>
